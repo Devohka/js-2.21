@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <ul class="list-movies">
+
+    </ul>
+
+    <button class="add-card-g" type="button">get</button>
+    <button class="add-card-f" type="button">add</button>
+    <button class="add-card-r" type="button">renewal</button>
+    <button class="add-card-d" type="button">Delete</button>
+
+    <div class="modal modal-card">
+        <form class="form-card">
+            <input type="text" placeholder="title" class="input-modal" name="title">
+            <input type="text" placeholder="genre" class="input-modal" name="genre">
+            <input type="text" placeholder="director" class="input-modal" name="director">
+            <input type="number" placeholder="year" class="input-modal" name="year">
+            <input type="number" placeholder="id" class="input-modal" name="id">
+            <button class="submit-btn" type="submit">add</button>
+        </form>
+    </div>
+
+
+    <div class="modal modal-renewal">
+        <form class="form-renewal">
+            <input type="number" placeholder="id" class="input-modal" name="id" data-id>
+        </form>
+        <div class="modal modal-renewal-card">
+            <form class="form-renewal-card">
+                <input type="text" placeholder="title" class="input-modal" name="title">
+                <input type="text" placeholder="genre" class="input-modal" name="genre">
+                <input type="text" placeholder="director" class="input-modal" name="director">
+                <input type="number" placeholder="year" class="input-modal" name="year">
+                <button class="renewal-btn" type="submit">renewal</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal modal-delete">
+        <form class="form-delete">
+            <input type="number" placeholder="id" class="input-modal" name="id" data-delete>
+            <button class="delete-btn" type="submit">delete</button>
+        </form>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
